@@ -32,8 +32,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnStart = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -84,33 +84,37 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Let\'s Start The Blades Battle";
             // 
-            // btnStart
-            // 
-            this.btnStart.BackColor = System.Drawing.Color.Transparent;
-            this.btnStart.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStart.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnStart.Location = new System.Drawing.Point(463, 271);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(154, 79);
-            this.btnStart.TabIndex = 4;
-            this.btnStart.Text = "Start";
-            this.btnStart.UseVisualStyleBackColor = false;
-            // 
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.Transparent;
             this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.Red;
-            this.btnExit.Location = new System.Drawing.Point(291, 271);
+            this.btnExit.Location = new System.Drawing.Point(266, 271);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(154, 79);
+            this.btnExit.Size = new System.Drawing.Size(170, 79);
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button1.FlatAppearance.BorderSize = 3;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.Lime;
+            this.button1.Location = new System.Drawing.Point(467, 271);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(170, 79);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Start";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // frmMainMenu
             // 
@@ -119,8 +123,8 @@
             this.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources._2_Warriors;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(919, 597);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnStart);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -139,8 +143,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button button1;
     }
 }
 
