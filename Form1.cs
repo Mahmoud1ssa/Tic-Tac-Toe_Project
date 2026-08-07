@@ -22,5 +22,12 @@ namespace Tic_Tac_Toe_Project
             this.Close();
         }
 
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            frmChooseBlade frmChooseBlade = new frmChooseBlade();
+            this.Hide();
+            frmChooseBlade.ShowDialog();
+            this.Show();
+        }
     }
 }

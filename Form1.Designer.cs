@@ -115,7 +115,7 @@
             this.btnStart.TabIndex = 6;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = false;
-            this.btnStart.Click += new System.EventHandler(this.button1_Click);
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // frmMainMenu
             // 
