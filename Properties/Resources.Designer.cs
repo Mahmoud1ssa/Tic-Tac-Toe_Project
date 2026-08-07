@@ -69,5 +69,15 @@ namespace Tic_Tac_Toe_Project.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2_Warriors_Side_By_Side {
+            get {
+                object obj = ResourceManager.GetObject("2 Warriors_Side_By_Side", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

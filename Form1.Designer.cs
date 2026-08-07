@@ -33,7 +33,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -42,7 +42,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Permanent Marker", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(350, 24);
+            this.label1.Location = new System.Drawing.Point(374, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(267, 67);
             this.label1.TabIndex = 0;
@@ -54,7 +54,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Permanent Marker", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(141, 43);
+            this.label2.Location = new System.Drawing.Point(165, 43);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(203, 43);
             this.label2.TabIndex = 1;
@@ -66,7 +66,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Permanent Marker", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(623, 43);
+            this.label3.Location = new System.Drawing.Point(647, 43);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 43);
             this.label3.TabIndex = 2;
@@ -100,21 +100,22 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // button1
+            // btnStart
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.BorderSize = 3;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.Lime;
-            this.button1.Location = new System.Drawing.Point(467, 271);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 79);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Start";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnStart.BackColor = System.Drawing.Color.Transparent;
+            this.btnStart.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnStart.FlatAppearance.BorderSize = 3;
+            this.btnStart.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStart.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold);
+            this.btnStart.ForeColor = System.Drawing.Color.Lime;
+            this.btnStart.Location = new System.Drawing.Point(467, 271);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(170, 79);
+            this.btnStart.TabIndex = 6;
+            this.btnStart.Text = "Start";
+            this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmMainMenu
             // 
@@ -123,7 +124,7 @@
             this.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources._2_Warriors;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(919, 597);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnStart);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -144,7 +145,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnStart;
     }
 }
 

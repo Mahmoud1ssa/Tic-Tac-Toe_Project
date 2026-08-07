@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Tic_Tac_Toe_Project
 {
-    public partial class frmMainMenu : Form
+    public partial class frmChooseBlade : Form
     {
-        public frmMainMenu()
+        public frmChooseBlade()
         {
             InitializeComponent();
         }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
     }
 }
