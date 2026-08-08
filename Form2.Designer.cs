@@ -50,8 +50,7 @@
             // 
             this.btnX.AutoSize = true;
             this.btnX.BackColor = System.Drawing.Color.Transparent;
-            this.btnX.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnX.FlatAppearance.BorderSize = 2;
+            this.btnX.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnX.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnX.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -62,12 +61,13 @@
             this.btnX.TabIndex = 1;
             this.btnX.Text = "X";
             this.btnX.UseVisualStyleBackColor = false;
+            this.btnX.Click += new System.EventHandler(this.btnX_Click);
             // 
             // btnO
             // 
             this.btnO.AutoSize = true;
             this.btnO.BackColor = System.Drawing.Color.Transparent;
-            this.btnO.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnO.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnO.FlatAppearance.BorderSize = 2;
             this.btnO.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -80,6 +80,7 @@
             this.btnO.Tag = "1";
             this.btnO.Text = "O";
             this.btnO.UseVisualStyleBackColor = false;
+            this.btnO.Click += new System.EventHandler(this.btnO_Click);
             // 
             // btnBack
             // 

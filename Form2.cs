@@ -21,5 +21,27 @@ namespace Tic_Tac_Toe_Project
         {
             this.Close();
         }
+
+        private void btnX_Click(object sender, EventArgs e)
+        {
+            clsGameCurrentStat.Player1 = 'X';
+            clsGameCurrentStat.Player2 = 'O';
+
+            frmPlayersChoices frmPlayersChoices = new frmPlayersChoices();
+            this.Hide();
+            frmPlayersChoices.ShowDialog();
+            this.Show();
+        }
+
+        private void btnO_Click(object sender, EventArgs e)
+        {
+            clsGameCurrentStat.Player1 = 'O';
+            clsGameCurrentStat.Player2 = 'X';
+
+            frmPlayersChoices frmPlayersChoices = new frmPlayersChoices();
+            this.Hide();
+            frmPlayersChoices.ShowDialog();
+            this.Show();
+        }
     }
 }
