@@ -165,6 +165,7 @@
             this.btnBlade2.Name = "btnBlade2";
             this.btnBlade2.Size = new System.Drawing.Size(90, 83);
             this.btnBlade2.TabIndex = 23;
+            this.btnBlade2.Tag = "0";
             this.btnBlade2.UseVisualStyleBackColor = false;
             // 
             // btnBlade3
@@ -178,6 +179,7 @@
             this.btnBlade3.Name = "btnBlade3";
             this.btnBlade3.Size = new System.Drawing.Size(90, 83);
             this.btnBlade3.TabIndex = 22;
+            this.btnBlade3.Tag = "0";
             this.btnBlade3.UseVisualStyleBackColor = false;
             // 
             // btnBlade4
@@ -191,6 +193,7 @@
             this.btnBlade4.Name = "btnBlade4";
             this.btnBlade4.Size = new System.Drawing.Size(90, 83);
             this.btnBlade4.TabIndex = 21;
+            this.btnBlade4.Tag = "0";
             this.btnBlade4.UseVisualStyleBackColor = false;
             // 
             // btnBlade7
@@ -204,6 +207,7 @@
             this.btnBlade7.Name = "btnBlade7";
             this.btnBlade7.Size = new System.Drawing.Size(90, 83);
             this.btnBlade7.TabIndex = 20;
+            this.btnBlade7.Tag = "0";
             this.btnBlade7.UseVisualStyleBackColor = false;
             // 
             // btnBlade9
@@ -217,6 +221,7 @@
             this.btnBlade9.Name = "btnBlade9";
             this.btnBlade9.Size = new System.Drawing.Size(90, 83);
             this.btnBlade9.TabIndex = 19;
+            this.btnBlade9.Tag = "0";
             this.btnBlade9.UseVisualStyleBackColor = false;
             // 
             // btnBlade6
@@ -230,6 +235,7 @@
             this.btnBlade6.Name = "btnBlade6";
             this.btnBlade6.Size = new System.Drawing.Size(90, 83);
             this.btnBlade6.TabIndex = 18;
+            this.btnBlade6.Tag = "0";
             this.btnBlade6.UseVisualStyleBackColor = false;
             // 
             // btnBlade8
@@ -243,6 +249,7 @@
             this.btnBlade8.Name = "btnBlade8";
             this.btnBlade8.Size = new System.Drawing.Size(90, 83);
             this.btnBlade8.TabIndex = 17;
+            this.btnBlade8.Tag = "0";
             this.btnBlade8.UseVisualStyleBackColor = false;
             // 
             // btnBlade5
@@ -256,6 +263,7 @@
             this.btnBlade5.Name = "btnBlade5";
             this.btnBlade5.Size = new System.Drawing.Size(90, 83);
             this.btnBlade5.TabIndex = 16;
+            this.btnBlade5.Tag = "0";
             this.btnBlade5.UseVisualStyleBackColor = false;
             // 
             // btnBlade1
@@ -269,6 +277,7 @@
             this.btnBlade1.Name = "btnBlade1";
             this.btnBlade1.Size = new System.Drawing.Size(90, 83);
             this.btnBlade1.TabIndex = 15;
+            this.btnBlade1.Tag = "0";
             this.btnBlade1.UseVisualStyleBackColor = false;
             this.btnBlade1.Click += new System.EventHandler(this.btnBlade1_Click);
             // 
