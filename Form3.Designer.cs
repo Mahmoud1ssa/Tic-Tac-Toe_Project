@@ -30,10 +30,12 @@
         {
             this.lblPlayer1Choice = new System.Windows.Forms.Label();
             this.lblPlayer2Choice = new System.Windows.Forms.Label();
-            this.lblPlayer2ChoiceValue = new System.Windows.Forms.Label();
-            this.lblPlayer1ChoiceValue = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.lblTimer = new System.Windows.Forms.Label();
+            this.picPlayer1Choice = new System.Windows.Forms.PictureBox();
+            this.picPlayer2Choice = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picPlayer1Choice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPlayer2Choice)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPlayer1Choice
@@ -59,28 +61,6 @@
             this.lblPlayer2Choice.Size = new System.Drawing.Size(157, 43);
             this.lblPlayer2Choice.TabIndex = 1;
             this.lblPlayer2Choice.Text = "Player 2 ";
-            // 
-            // lblPlayer2ChoiceValue
-            // 
-            this.lblPlayer2ChoiceValue.BackColor = System.Drawing.Color.Transparent;
-            this.lblPlayer2ChoiceValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayer2ChoiceValue.ForeColor = System.Drawing.Color.Red;
-            this.lblPlayer2ChoiceValue.Location = new System.Drawing.Point(515, 203);
-            this.lblPlayer2ChoiceValue.Name = "lblPlayer2ChoiceValue";
-            this.lblPlayer2ChoiceValue.Size = new System.Drawing.Size(103, 74);
-            this.lblPlayer2ChoiceValue.TabIndex = 2;
-            this.lblPlayer2ChoiceValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblPlayer1ChoiceValue
-            // 
-            this.lblPlayer1ChoiceValue.BackColor = System.Drawing.Color.Transparent;
-            this.lblPlayer1ChoiceValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayer1ChoiceValue.ForeColor = System.Drawing.Color.Red;
-            this.lblPlayer1ChoiceValue.Location = new System.Drawing.Point(285, 203);
-            this.lblPlayer1ChoiceValue.Name = "lblPlayer1ChoiceValue";
-            this.lblPlayer1ChoiceValue.Size = new System.Drawing.Size(103, 74);
-            this.lblPlayer1ChoiceValue.TabIndex = 3;
-            this.lblPlayer1ChoiceValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnBack
             // 
@@ -110,6 +90,26 @@
             this.lblTimer.TabIndex = 6;
             this.lblTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // picPlayer1Choice
+            // 
+            this.picPlayer1Choice.BackColor = System.Drawing.Color.Transparent;
+            this.picPlayer1Choice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picPlayer1Choice.Location = new System.Drawing.Point(290, 215);
+            this.picPlayer1Choice.Name = "picPlayer1Choice";
+            this.picPlayer1Choice.Size = new System.Drawing.Size(90, 83);
+            this.picPlayer1Choice.TabIndex = 7;
+            this.picPlayer1Choice.TabStop = false;
+            // 
+            // picPlayer2Choice
+            // 
+            this.picPlayer2Choice.BackColor = System.Drawing.Color.Transparent;
+            this.picPlayer2Choice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picPlayer2Choice.Location = new System.Drawing.Point(520, 215);
+            this.picPlayer2Choice.Name = "picPlayer2Choice";
+            this.picPlayer2Choice.Size = new System.Drawing.Size(90, 83);
+            this.picPlayer2Choice.TabIndex = 8;
+            this.picPlayer2Choice.TabStop = false;
+            // 
             // frmPlayersChoices
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -117,10 +117,10 @@
             this.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources._2_Warriors;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(919, 597);
+            this.Controls.Add(this.picPlayer2Choice);
+            this.Controls.Add(this.picPlayer1Choice);
             this.Controls.Add(this.lblTimer);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.lblPlayer1ChoiceValue);
-            this.Controls.Add(this.lblPlayer2ChoiceValue);
             this.Controls.Add(this.lblPlayer2Choice);
             this.Controls.Add(this.lblPlayer1Choice);
             this.DoubleBuffered = true;
@@ -128,6 +128,8 @@
             this.Name = "frmPlayersChoices";
             this.Text = "Win Blade";
             this.Shown += new System.EventHandler(this.frmPlayersChoices_Shown);
+            ((System.ComponentModel.ISupportInitialize)(this.picPlayer1Choice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPlayer2Choice)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,9 +139,9 @@
 
         private System.Windows.Forms.Label lblPlayer1Choice;
         private System.Windows.Forms.Label lblPlayer2Choice;
-        private System.Windows.Forms.Label lblPlayer2ChoiceValue;
-        private System.Windows.Forms.Label lblPlayer1ChoiceValue;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label lblTimer;
+        private System.Windows.Forms.PictureBox picPlayer1Choice;
+        private System.Windows.Forms.PictureBox picPlayer2Choice;
     }
 }

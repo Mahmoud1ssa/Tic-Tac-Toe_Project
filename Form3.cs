@@ -8,17 +8,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tic_Tac_Toe_Project.Properties;
 
 namespace Tic_Tac_Toe_Project
 {
     public partial class frmPlayersChoices : Form
     {
+        private void GivePictureBoxesCorrectValues()
+        {
+            if (clsGameCurrentStat.Player1 == 'X')
+            {
+                picPlayer1Choice.BackgroundImage = Resources.X_Blade_Shape;
+                picPlayer2Choice.BackgroundImage = Resources.O_Blade_Shape;
+            }
+            else if (clsGameCurrentStat.Player1 == 'O')
+            {
+                picPlayer1Choice.BackgroundImage = Resources.O_Blade_Shape;
+                picPlayer2Choice.BackgroundImage = Resources.X_Blade_Shape;
+            }
+        }
         public frmPlayersChoices()
         {
             InitializeComponent();
 
-            lblPlayer1ChoiceValue.Text = clsGameCurrentStat.Player1.ToString();
-            lblPlayer2ChoiceValue.Text = clsGameCurrentStat.Player2.ToString();
+            GivePictureBoxesCorrectValues();
         }
 
         private async Task lblTimerFunction(int MilliSec, Label lbl)
