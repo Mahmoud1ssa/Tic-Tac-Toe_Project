@@ -130,7 +130,7 @@
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.Red;
-            this.btnBack.Location = new System.Drawing.Point(12, 9);
+            this.btnBack.Location = new System.Drawing.Point(12, 12);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(87, 39);
             this.btnBack.TabIndex = 21;
@@ -160,6 +160,7 @@
             this.btnBlade2.BackColor = System.Drawing.Color.Transparent;
             this.btnBlade2.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
             this.btnBlade2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBlade2.FlatAppearance.BorderSize = 2;
             this.btnBlade2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnBlade2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBlade2.Location = new System.Drawing.Point(27, 106);
@@ -175,6 +176,7 @@
             this.btnBlade3.BackColor = System.Drawing.Color.Transparent;
             this.btnBlade3.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
             this.btnBlade3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBlade3.FlatAppearance.BorderSize = 2;
             this.btnBlade3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnBlade3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBlade3.Location = new System.Drawing.Point(27, 195);
@@ -190,6 +192,7 @@
             this.btnBlade4.BackColor = System.Drawing.Color.Transparent;
             this.btnBlade4.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
             this.btnBlade4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBlade4.FlatAppearance.BorderSize = 2;
             this.btnBlade4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnBlade4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBlade4.Location = new System.Drawing.Point(123, 17);
@@ -205,6 +208,7 @@
             this.btnBlade7.BackColor = System.Drawing.Color.Transparent;
             this.btnBlade7.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
             this.btnBlade7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBlade7.FlatAppearance.BorderSize = 2;
             this.btnBlade7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnBlade7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBlade7.Location = new System.Drawing.Point(219, 17);
@@ -220,6 +224,7 @@
             this.btnBlade9.BackColor = System.Drawing.Color.Transparent;
             this.btnBlade9.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
             this.btnBlade9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBlade9.FlatAppearance.BorderSize = 2;
             this.btnBlade9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnBlade9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBlade9.Location = new System.Drawing.Point(219, 195);
@@ -235,6 +240,7 @@
             this.btnBlade6.BackColor = System.Drawing.Color.Transparent;
             this.btnBlade6.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
             this.btnBlade6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBlade6.FlatAppearance.BorderSize = 2;
             this.btnBlade6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnBlade6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBlade6.Location = new System.Drawing.Point(123, 195);
@@ -250,6 +256,7 @@
             this.btnBlade8.BackColor = System.Drawing.Color.Transparent;
             this.btnBlade8.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
             this.btnBlade8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBlade8.FlatAppearance.BorderSize = 2;
             this.btnBlade8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnBlade8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBlade8.Location = new System.Drawing.Point(219, 106);
@@ -265,6 +272,7 @@
             this.btnBlade5.BackColor = System.Drawing.Color.Transparent;
             this.btnBlade5.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
             this.btnBlade5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBlade5.FlatAppearance.BorderSize = 2;
             this.btnBlade5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnBlade5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBlade5.Location = new System.Drawing.Point(123, 106);
@@ -280,6 +288,7 @@
             this.btnBlade1.BackColor = System.Drawing.Color.Transparent;
             this.btnBlade1.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
             this.btnBlade1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBlade1.FlatAppearance.BorderSize = 2;
             this.btnBlade1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnBlade1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBlade1.Location = new System.Drawing.Point(27, 17);
@@ -308,7 +317,7 @@
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "frmGame";
-            this.Text = "Form4";
+            this.Text = "Win Blade";
             this.pnlBladeBoxes.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
