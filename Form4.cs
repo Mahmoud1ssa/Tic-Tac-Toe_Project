@@ -54,103 +54,49 @@ namespace Tic_Tac_Toe_Project
             ResetForm();
         }
 
+        private bool CheckLineOfBladesButtons(Button btn1, Button btn2, Button btn3)
+        {
+            if (btn1.Tag == btn2.Tag && btn1.Tag == btn3.Tag && btn1.Tag != "0")
+            {
+                clsGameCurrentStat.WinBlade = clsGameCurrentStat.CurrentBlade;
+
+                btn1.BackColor = Color.Lime;
+                btn2.BackColor = Color.Lime;
+                btn3.BackColor = Color.Lime;
+                return true;
+            }
+
+            return false;
+        }
+
         private bool IsThereAWinner()
         {
-            if (btnBlade1.Tag == btnBlade5.Tag &&
-                btnBlade1.Tag == btnBlade9.Tag &&
-                btnBlade1.Tag != "0")
-            {
-                clsGameCurrentStat.WinBlade = clsGameCurrentStat.CurrentBlade;
+            if (CheckLineOfBladesButtons(btnBlade1, btnBlade5, btnBlade9))
+                return true;
 
-                btnBlade1.BackColor = Color.Lime;
-                btnBlade5.BackColor = Color.Lime;
-                btnBlade9.BackColor = Color.Lime;
-            }
+            else if (CheckLineOfBladesButtons(btnBlade3, btnBlade5, btnBlade7))
+                return true;
 
-            else if (btnBlade3.Tag == btnBlade5.Tag &&
-                     btnBlade3.Tag == btnBlade7.Tag &&
-                     btnBlade3.Tag != "0")
-            {
-                clsGameCurrentStat.WinBlade = clsGameCurrentStat.CurrentBlade;
+            else if (CheckLineOfBladesButtons(btnBlade1, btnBlade2, btnBlade3))
+                return true;
 
-                btnBlade3.BackColor = Color.Lime;
-                btnBlade5.BackColor = Color.Lime;
-                btnBlade7.BackColor = Color.Lime;
-            }
+            else if (CheckLineOfBladesButtons(btnBlade4, btnBlade5, btnBlade6))
+                return true;
 
-            else if (btnBlade1.Tag == btnBlade2.Tag &&
-                     btnBlade1.Tag == btnBlade3.Tag &&
-                     btnBlade1.Tag != "0")
-            {
-                clsGameCurrentStat.WinBlade = clsGameCurrentStat.CurrentBlade;
+            else if (CheckLineOfBladesButtons(btnBlade7, btnBlade8, btnBlade9))
+                return true;
 
-                btnBlade1.BackColor = Color.Lime;
-                btnBlade2.BackColor = Color.Lime;
-                btnBlade3.BackColor = Color.Lime;
-            }
+            else if (CheckLineOfBladesButtons(btnBlade1, btnBlade4, btnBlade7))
+                return true;
 
-            else if (btnBlade4.Tag == btnBlade5.Tag &&
-                     btnBlade4.Tag == btnBlade6.Tag &&
-                     btnBlade4.Tag != "0")
-            {
-                clsGameCurrentStat.WinBlade = clsGameCurrentStat.CurrentBlade;
+            else if (CheckLineOfBladesButtons(btnBlade2, btnBlade5, btnBlade8))
+                return true;
 
-                btnBlade4.BackColor = Color.Lime;
-                btnBlade5.BackColor = Color.Lime;
-                btnBlade6.BackColor = Color.Lime;
-            }
+            else if (CheckLineOfBladesButtons(btnBlade3, btnBlade6, btnBlade9))
+                return true;
 
-            else if (btnBlade7.Tag == btnBlade8.Tag &&
-                     btnBlade7.Tag == btnBlade9.Tag &&
-                     btnBlade7.Tag != "0")
-            {
-                clsGameCurrentStat.WinBlade = clsGameCurrentStat.CurrentBlade;
-
-                btnBlade7.BackColor = Color.Lime;
-                btnBlade8.BackColor = Color.Lime;
-                btnBlade9.BackColor = Color.Lime;
-
-            }
-
-            else if (btnBlade1.Tag == btnBlade4.Tag &&
-                     btnBlade1.Tag == btnBlade7.Tag &&
-                     btnBlade1.Tag != "0")
-            {
-                clsGameCurrentStat.WinBlade = clsGameCurrentStat.CurrentBlade;
-
-                btnBlade1.BackColor = Color.Lime;
-                btnBlade4.BackColor = Color.Lime;
-                btnBlade7.BackColor = Color.Lime;
-
-            }
-
-            else if (btnBlade2.Tag == btnBlade5.Tag &&
-                     btnBlade2.Tag == btnBlade8.Tag &&
-                     btnBlade2.Tag != "0")
-            {
-                clsGameCurrentStat.WinBlade = clsGameCurrentStat.CurrentBlade;
-
-                btnBlade2.BackColor = Color.Lime;
-                btnBlade5.BackColor = Color.Lime;
-                btnBlade8.BackColor = Color.Lime;
-            }
-
-            else if (btnBlade3.Tag == btnBlade6.Tag &&
-                     btnBlade3.Tag == btnBlade9.Tag &&
-                     btnBlade3.Tag != "0")
-            {
-                clsGameCurrentStat.WinBlade = clsGameCurrentStat.CurrentBlade;
-
-                btnBlade3.BackColor = Color.Lime;
-                btnBlade6.BackColor = Color.Lime;
-                btnBlade9.BackColor = Color.Lime;
-            }
             else
-            {
                 return false;
-            }
-
-            return true;
         }
 
         private bool IsThereEmptyBladeBoxesLeft(Panel pnlBladeBoxes)
