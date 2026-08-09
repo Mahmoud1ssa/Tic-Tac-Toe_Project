@@ -50,16 +50,18 @@
             // 
             this.btnX.AutoSize = true;
             this.btnX.BackColor = System.Drawing.Color.Transparent;
+            this.btnX.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.X_Blade_Shape;
+            this.btnX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnX.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnX.FlatAppearance.BorderSize = 2;
             this.btnX.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnX.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnX.ForeColor = System.Drawing.Color.White;
-            this.btnX.Location = new System.Drawing.Point(614, 467);
+            this.btnX.Location = new System.Drawing.Point(612, 448);
             this.btnX.Name = "btnX";
-            this.btnX.Size = new System.Drawing.Size(144, 105);
+            this.btnX.Size = new System.Drawing.Size(146, 124);
             this.btnX.TabIndex = 1;
-            this.btnX.Text = "X";
             this.btnX.UseVisualStyleBackColor = false;
             this.btnX.Click += new System.EventHandler(this.btnX_Click);
             // 
@@ -67,18 +69,19 @@
             // 
             this.btnO.AutoSize = true;
             this.btnO.BackColor = System.Drawing.Color.Transparent;
+            this.btnO.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.O_Blade_Shape;
+            this.btnO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnO.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnO.FlatAppearance.BorderSize = 2;
             this.btnO.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnO.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F);
             this.btnO.ForeColor = System.Drawing.Color.White;
-            this.btnO.Location = new System.Drawing.Point(159, 467);
+            this.btnO.Location = new System.Drawing.Point(153, 448);
             this.btnO.Name = "btnO";
-            this.btnO.Size = new System.Drawing.Size(156, 105);
+            this.btnO.Size = new System.Drawing.Size(146, 124);
             this.btnO.TabIndex = 2;
             this.btnO.Tag = "1";
-            this.btnO.Text = "O";
             this.btnO.UseVisualStyleBackColor = false;
             this.btnO.Click += new System.EventHandler(this.btnO_Click);
             // 

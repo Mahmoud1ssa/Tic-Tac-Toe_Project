@@ -14,7 +14,7 @@ namespace Tic_Tac_Toe_Project
 {
     public partial class frmPlayersChoices : Form
     {
-        private void GivePictureBoxesCorrectValues()
+        private void GivePictureBoxesCorrectImages()
         {
             if (clsGameCurrentStat.Player1 == 'X')
             {
@@ -31,7 +31,7 @@ namespace Tic_Tac_Toe_Project
         {
             InitializeComponent();
 
-            GivePictureBoxesCorrectValues();
+            GivePictureBoxesCorrectImages();
         }
 
         private async Task lblTimerFunction(int MilliSec, Label lbl)
