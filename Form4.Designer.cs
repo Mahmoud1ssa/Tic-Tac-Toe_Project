@@ -34,7 +34,7 @@
             this.btnRestart = new System.Windows.Forms.Button();
             this.lblTurnValue = new System.Windows.Forms.Label();
             this.lblWinnerValue = new System.Windows.Forms.Label();
-            this.btnBack = new System.Windows.Forms.Button();
+            this.btnMainMenu = new System.Windows.Forms.Button();
             this.pnlBladeBoxes = new System.Windows.Forms.Panel();
             this.btnBlade2 = new System.Windows.Forms.Button();
             this.btnBlade3 = new System.Windows.Forms.Button();
@@ -121,22 +121,22 @@
             this.lblWinnerValue.Size = new System.Drawing.Size(230, 40);
             this.lblWinnerValue.TabIndex = 20;
             // 
-            // btnBack
+            // btnMainMenu
             // 
-            this.btnBack.AutoSize = true;
-            this.btnBack.BackColor = System.Drawing.Color.Transparent;
-            this.btnBack.FlatAppearance.BorderSize = 2;
-            this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.ForeColor = System.Drawing.Color.Red;
-            this.btnBack.Location = new System.Drawing.Point(12, 12);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(87, 39);
-            this.btnBack.TabIndex = 21;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.btnMainMenu.AutoSize = true;
+            this.btnMainMenu.BackColor = System.Drawing.Color.Transparent;
+            this.btnMainMenu.FlatAppearance.BorderSize = 2;
+            this.btnMainMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnMainMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMainMenu.ForeColor = System.Drawing.Color.Red;
+            this.btnMainMenu.Location = new System.Drawing.Point(12, 12);
+            this.btnMainMenu.Name = "btnMainMenu";
+            this.btnMainMenu.Size = new System.Drawing.Size(124, 39);
+            this.btnMainMenu.TabIndex = 21;
+            this.btnMainMenu.Text = "Main Menu";
+            this.btnMainMenu.UseVisualStyleBackColor = false;
+            this.btnMainMenu.Click += new System.EventHandler(this.btnMainMenu_Click_1);
             // 
             // pnlBladeBoxes
             // 
@@ -307,7 +307,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(919, 597);
             this.Controls.Add(this.pnlBladeBoxes);
-            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.lblWinnerValue);
             this.Controls.Add(this.lblTurnValue);
             this.Controls.Add(this.btnRestart);
@@ -331,7 +331,7 @@
         private System.Windows.Forms.Button btnRestart;
         private System.Windows.Forms.Label lblTurnValue;
         private System.Windows.Forms.Label lblWinnerValue;
-        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnMainMenu;
         private System.Windows.Forms.Panel pnlBladeBoxes;
         private System.Windows.Forms.Button btnBlade2;
         private System.Windows.Forms.Button btnBlade3;

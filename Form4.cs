@@ -19,10 +19,39 @@ namespace Tic_Tac_Toe_Project
         //Tag = 2 => Button pressed by O blade.
 
         //When You See "BladeBox" word in the code... I mean blade play button in the "frmGame" form... We have 9 BladeBoxes.
+
+        private void ResetForm()
+        {
+            foreach (Button btnBlade in pnlBladeBoxes.Controls)
+            {
+                btnBlade.BackgroundImage = Resources.Question_Mark_3D_Shape;
+                btnBlade.BackColor = Color.Transparent;
+                btnBlade.Tag = "0";
+                btnBlade.Enabled = true;
+            }
+
+            pnlBladeBoxes.Enabled = true;
+
+            lblTurnValue.Text = "Player 1";
+            lblWinnerValue.Text = "";
+
+            clsGameCurrentStat.CurrentBlade = clsGameCurrentStat.Player1;
+            clsGameCurrentStat.WinBlade = null;
+        }
+
         public frmGame()
         {
             InitializeComponent();
-            clsGameCurrentStat.CurrentBlade = clsGameCurrentStat.Player1;
+
+            //I do this so if I close the form using the system exit button... all forms close.
+            //But when I close form using the Back button that I add manually... only the active form close.
+            //The tag value will be changed to 0 when I press Back button (see the back button func).
+            //so in the previous form i check if the form ahead that was closed... if the tag in it was 0...
+            //That means that I exited the form ahead by pressing back button
+            //if the tag in it was 1... that means I exited the form ahead by pressing back button.
+            this.Tag = "1";
+
+            ResetForm();
         }
 
         private bool IsThereAWinner()
@@ -33,9 +62,9 @@ namespace Tic_Tac_Toe_Project
             {
                 clsGameCurrentStat.WinBlade = clsGameCurrentStat.CurrentBlade;
 
-                btnBlade1.BackColor = Color.Green;
-                btnBlade5.BackColor = Color.Green;
-                btnBlade9.BackColor = Color.Green;
+                btnBlade1.BackColor = Color.Lime;
+                btnBlade5.BackColor = Color.Lime;
+                btnBlade9.BackColor = Color.Lime;
             }
 
             else if (btnBlade3.Tag == btnBlade5.Tag &&
@@ -44,9 +73,9 @@ namespace Tic_Tac_Toe_Project
             {
                 clsGameCurrentStat.WinBlade = clsGameCurrentStat.CurrentBlade;
 
-                btnBlade3.BackColor = Color.Green;
-                btnBlade5.BackColor = Color.Green;
-                btnBlade7.BackColor = Color.Green;
+                btnBlade3.BackColor = Color.Lime;
+                btnBlade5.BackColor = Color.Lime;
+                btnBlade7.BackColor = Color.Lime;
             }
 
             else if (btnBlade1.Tag == btnBlade2.Tag &&
@@ -55,9 +84,9 @@ namespace Tic_Tac_Toe_Project
             {
                 clsGameCurrentStat.WinBlade = clsGameCurrentStat.CurrentBlade;
 
-                btnBlade1.BackColor = Color.Green;
-                btnBlade2.BackColor = Color.Green;
-                btnBlade3.BackColor = Color.Green;
+                btnBlade1.BackColor = Color.Lime;
+                btnBlade2.BackColor = Color.Lime;
+                btnBlade3.BackColor = Color.Lime;
             }
 
             else if (btnBlade4.Tag == btnBlade5.Tag &&
@@ -66,9 +95,9 @@ namespace Tic_Tac_Toe_Project
             {
                 clsGameCurrentStat.WinBlade = clsGameCurrentStat.CurrentBlade;
 
-                btnBlade4.BackColor = Color.Green;
-                btnBlade5.BackColor = Color.Green;
-                btnBlade6.BackColor = Color.Green;
+                btnBlade4.BackColor = Color.Lime;
+                btnBlade5.BackColor = Color.Lime;
+                btnBlade6.BackColor = Color.Lime;
             }
 
             else if (btnBlade7.Tag == btnBlade8.Tag &&
@@ -77,9 +106,9 @@ namespace Tic_Tac_Toe_Project
             {
                 clsGameCurrentStat.WinBlade = clsGameCurrentStat.CurrentBlade;
 
-                btnBlade7.BackColor = Color.Green;
-                btnBlade8.BackColor = Color.Green;
-                btnBlade9.BackColor = Color.Green;
+                btnBlade7.BackColor = Color.Lime;
+                btnBlade8.BackColor = Color.Lime;
+                btnBlade9.BackColor = Color.Lime;
 
             }
 
@@ -89,9 +118,9 @@ namespace Tic_Tac_Toe_Project
             {
                 clsGameCurrentStat.WinBlade = clsGameCurrentStat.CurrentBlade;
 
-                btnBlade1.BackColor = Color.Green;
-                btnBlade4.BackColor = Color.Green;
-                btnBlade7.BackColor = Color.Green;
+                btnBlade1.BackColor = Color.Lime;
+                btnBlade4.BackColor = Color.Lime;
+                btnBlade7.BackColor = Color.Lime;
 
             }
 
@@ -101,9 +130,9 @@ namespace Tic_Tac_Toe_Project
             {
                 clsGameCurrentStat.WinBlade = clsGameCurrentStat.CurrentBlade;
 
-                btnBlade2.BackColor = Color.Green;
-                btnBlade5.BackColor = Color.Green;
-                btnBlade8.BackColor = Color.Green;
+                btnBlade2.BackColor = Color.Lime;
+                btnBlade5.BackColor = Color.Lime;
+                btnBlade8.BackColor = Color.Lime;
             }
 
             else if (btnBlade3.Tag == btnBlade6.Tag &&
@@ -112,9 +141,9 @@ namespace Tic_Tac_Toe_Project
             {
                 clsGameCurrentStat.WinBlade = clsGameCurrentStat.CurrentBlade;
 
-                btnBlade3.BackColor = Color.Green;
-                btnBlade6.BackColor = Color.Green;
-                btnBlade9.BackColor = Color.Green;
+                btnBlade3.BackColor = Color.Lime;
+                btnBlade6.BackColor = Color.Lime;
+                btnBlade9.BackColor = Color.Lime;
             }
             else
             {
@@ -152,6 +181,8 @@ namespace Tic_Tac_Toe_Project
                 btnBlade.BackgroundImage = Resources.O_Blade_Shape;
                 btnBlade.Enabled = false;
             }
+            else
+                return;
 
 
             if (IsThereAWinner())
@@ -178,10 +209,10 @@ namespace Tic_Tac_Toe_Project
                     else if (clsGameCurrentStat.CurrentBlade == 'O')
                         clsGameCurrentStat.CurrentBlade = 'X';
 
-                    if (clsGameCurrentStat.Player1 == clsGameCurrentStat.CurrentBlade)
+                    if (clsGameCurrentStat.CurrentBlade == clsGameCurrentStat.Player1)
                         lblTurnValue.Text = "Player 1";
 
-                    else if (clsGameCurrentStat.Player2 == clsGameCurrentStat.CurrentBlade)
+                    else if (clsGameCurrentStat.CurrentBlade == clsGameCurrentStat.Player2)
                         lblTurnValue.Text = "Player 2";
                 }
                 else
@@ -192,8 +223,9 @@ namespace Tic_Tac_Toe_Project
             }
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+        private void btnMainMenu_Click_1(object sender, EventArgs e)
         {
+            this.Tag = "1";
             this.Close();
         }
 
@@ -242,28 +274,10 @@ namespace Tic_Tac_Toe_Project
             DealingWithBladeButtonClickAction(sender as Button);
         }
 
-        private void ResetFormToRestartGame()
-        {
-            foreach(Button btnBlade in pnlBladeBoxes.Controls)
-            {
-                btnBlade.BackgroundImage = Resources.Question_Mark_3D_Shape;
-                btnBlade.BackColor = Color.Transparent;
-                btnBlade.Tag = "0";
-                btnBlade.Enabled = true;
-            }
-
-            pnlBladeBoxes.Enabled = true;
-
-            lblTurnValue.Text = "Player 1";
-            lblWinnerValue.Text = "";
-
-            clsGameCurrentStat.CurrentBlade = clsGameCurrentStat.Player1;
-            clsGameCurrentStat.WinBlade = null;
-        }
 
         private void btnRestart_Click(object sender, EventArgs e)
         {
-            ResetFormToRestartGame();
+            ResetForm();
         }
     }
 }
