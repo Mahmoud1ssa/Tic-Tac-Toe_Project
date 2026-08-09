@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblHeadLine = new System.Windows.Forms.Label();
             this.lblTurn = new System.Windows.Forms.Label();
             this.lblWinner = new System.Windows.Forms.Label();
-            this.btnStart = new System.Windows.Forms.Button();
+            this.btnRestart = new System.Windows.Forms.Button();
             this.lblTurnValue = new System.Windows.Forms.Label();
             this.lblWinnerValue = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
@@ -48,17 +48,17 @@
             this.pnlBladeBoxes.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lblHeadLine
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Permanent Marker", 28.2F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(228, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(439, 67);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Win Blade Battle";
+            this.lblHeadLine.AutoSize = true;
+            this.lblHeadLine.BackColor = System.Drawing.Color.Transparent;
+            this.lblHeadLine.Font = new System.Drawing.Font("Permanent Marker", 28.2F);
+            this.lblHeadLine.ForeColor = System.Drawing.Color.White;
+            this.lblHeadLine.Location = new System.Drawing.Point(228, 9);
+            this.lblHeadLine.Name = "lblHeadLine";
+            this.lblHeadLine.Size = new System.Drawing.Size(439, 67);
+            this.lblHeadLine.TabIndex = 15;
+            this.lblHeadLine.Text = "Win Blade Battle";
             // 
             // lblTurn
             // 
@@ -84,21 +84,21 @@
             this.lblWinner.TabIndex = 17;
             this.lblWinner.Text = "Winner :";
             // 
-            // btnStart
+            // btnRestart
             // 
-            this.btnStart.BackColor = System.Drawing.Color.Transparent;
-            this.btnStart.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnStart.FlatAppearance.BorderSize = 3;
-            this.btnStart.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStart.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.ForeColor = System.Drawing.Color.White;
-            this.btnStart.Location = new System.Drawing.Point(375, 511);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(160, 53);
-            this.btnStart.TabIndex = 18;
-            this.btnStart.Text = "Restart";
-            this.btnStart.UseVisualStyleBackColor = false;
+            this.btnRestart.BackColor = System.Drawing.Color.Transparent;
+            this.btnRestart.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnRestart.FlatAppearance.BorderSize = 3;
+            this.btnRestart.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnRestart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestart.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestart.ForeColor = System.Drawing.Color.White;
+            this.btnRestart.Location = new System.Drawing.Point(375, 511);
+            this.btnRestart.Name = "btnRestart";
+            this.btnRestart.Size = new System.Drawing.Size(160, 53);
+            this.btnRestart.TabIndex = 18;
+            this.btnRestart.Text = "Restart";
+            this.btnRestart.UseVisualStyleBackColor = false;
             // 
             // lblTurnValue
             // 
@@ -292,10 +292,10 @@
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblWinnerValue);
             this.Controls.Add(this.lblTurnValue);
-            this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.btnRestart);
             this.Controls.Add(this.lblWinner);
             this.Controls.Add(this.lblTurn);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblHeadLine);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "frmGame";
@@ -307,10 +307,10 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblHeadLine;
         private System.Windows.Forms.Label lblTurn;
         private System.Windows.Forms.Label lblWinner;
-        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Button btnRestart;
         private System.Windows.Forms.Label lblTurnValue;
         private System.Windows.Forms.Label lblWinnerValue;
         private System.Windows.Forms.Button btnBack;

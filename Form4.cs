@@ -139,7 +139,7 @@ namespace Tic_Tac_Toe_Project
 
         private void DealingWithBladeButtonClickAction(Button btnBlade)
         {
-            if (btnBlade.Tag == Convert.ToString(0))
+            if (btnBlade.Tag == "0")
                 btnBlade.Tag = "1";
             else
                 return;
