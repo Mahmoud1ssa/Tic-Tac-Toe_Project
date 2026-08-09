@@ -12,5 +12,6 @@ namespace Tic_Tac_Toe_Project
         public static Char Player2;
 
         public static Char CurrentBlade;
+        public static Char WinBlade;
     }
 }

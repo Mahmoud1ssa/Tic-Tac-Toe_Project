@@ -117,5 +117,11 @@
   <ItemGroup>
     <None Include="Resources\Question_Mark_3D_Shape.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\O_Blade_Shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X_Blade_Shape.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

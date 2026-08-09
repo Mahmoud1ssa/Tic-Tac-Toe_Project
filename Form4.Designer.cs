@@ -28,141 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnBlade1 = new System.Windows.Forms.Button();
-            this.btnBlade5 = new System.Windows.Forms.Button();
-            this.btnBlade8 = new System.Windows.Forms.Button();
-            this.btnBlade6 = new System.Windows.Forms.Button();
-            this.btnBlade9 = new System.Windows.Forms.Button();
-            this.btnBlade7 = new System.Windows.Forms.Button();
-            this.btnBlade4 = new System.Windows.Forms.Button();
-            this.btnBlade3 = new System.Windows.Forms.Button();
-            this.btnBlade2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblTurn = new System.Windows.Forms.Label();
+            this.lblWinner = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblTurnValue = new System.Windows.Forms.Label();
+            this.lblWinnerValue = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
+            this.pnlBladeBoxes = new System.Windows.Forms.Panel();
+            this.btnBlade2 = new System.Windows.Forms.Button();
+            this.btnBlade3 = new System.Windows.Forms.Button();
+            this.btnBlade4 = new System.Windows.Forms.Button();
+            this.btnBlade7 = new System.Windows.Forms.Button();
+            this.btnBlade9 = new System.Windows.Forms.Button();
+            this.btnBlade6 = new System.Windows.Forms.Button();
+            this.btnBlade8 = new System.Windows.Forms.Button();
+            this.btnBlade5 = new System.Windows.Forms.Button();
+            this.btnBlade1 = new System.Windows.Forms.Button();
+            this.pnlBladeBoxes.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnBlade1
-            // 
-            this.btnBlade1.BackColor = System.Drawing.Color.Transparent;
-            this.btnBlade1.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
-            this.btnBlade1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBlade1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnBlade1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBlade1.Location = new System.Drawing.Point(307, 130);
-            this.btnBlade1.Name = "btnBlade1";
-            this.btnBlade1.Size = new System.Drawing.Size(90, 83);
-            this.btnBlade1.TabIndex = 6;
-            this.btnBlade1.UseVisualStyleBackColor = false;
-            this.btnBlade1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnBlade5
-            // 
-            this.btnBlade5.BackColor = System.Drawing.Color.Transparent;
-            this.btnBlade5.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
-            this.btnBlade5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBlade5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnBlade5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBlade5.Location = new System.Drawing.Point(403, 219);
-            this.btnBlade5.Name = "btnBlade5";
-            this.btnBlade5.Size = new System.Drawing.Size(90, 83);
-            this.btnBlade5.TabIndex = 7;
-            this.btnBlade5.UseVisualStyleBackColor = false;
-            // 
-            // btnBlade8
-            // 
-            this.btnBlade8.BackColor = System.Drawing.Color.Transparent;
-            this.btnBlade8.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
-            this.btnBlade8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBlade8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnBlade8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBlade8.Location = new System.Drawing.Point(499, 219);
-            this.btnBlade8.Name = "btnBlade8";
-            this.btnBlade8.Size = new System.Drawing.Size(90, 83);
-            this.btnBlade8.TabIndex = 8;
-            this.btnBlade8.UseVisualStyleBackColor = false;
-            // 
-            // btnBlade6
-            // 
-            this.btnBlade6.BackColor = System.Drawing.Color.Transparent;
-            this.btnBlade6.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
-            this.btnBlade6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBlade6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnBlade6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBlade6.Location = new System.Drawing.Point(403, 308);
-            this.btnBlade6.Name = "btnBlade6";
-            this.btnBlade6.Size = new System.Drawing.Size(90, 83);
-            this.btnBlade6.TabIndex = 9;
-            this.btnBlade6.UseVisualStyleBackColor = false;
-            // 
-            // btnBlade9
-            // 
-            this.btnBlade9.BackColor = System.Drawing.Color.Transparent;
-            this.btnBlade9.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
-            this.btnBlade9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBlade9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnBlade9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBlade9.Location = new System.Drawing.Point(499, 308);
-            this.btnBlade9.Name = "btnBlade9";
-            this.btnBlade9.Size = new System.Drawing.Size(90, 83);
-            this.btnBlade9.TabIndex = 10;
-            this.btnBlade9.UseVisualStyleBackColor = false;
-            // 
-            // btnBlade7
-            // 
-            this.btnBlade7.BackColor = System.Drawing.Color.Transparent;
-            this.btnBlade7.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
-            this.btnBlade7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBlade7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnBlade7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBlade7.Location = new System.Drawing.Point(499, 130);
-            this.btnBlade7.Name = "btnBlade7";
-            this.btnBlade7.Size = new System.Drawing.Size(90, 83);
-            this.btnBlade7.TabIndex = 11;
-            this.btnBlade7.UseVisualStyleBackColor = false;
-            // 
-            // btnBlade4
-            // 
-            this.btnBlade4.BackColor = System.Drawing.Color.Transparent;
-            this.btnBlade4.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
-            this.btnBlade4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBlade4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnBlade4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBlade4.Location = new System.Drawing.Point(403, 130);
-            this.btnBlade4.Name = "btnBlade4";
-            this.btnBlade4.Size = new System.Drawing.Size(90, 83);
-            this.btnBlade4.TabIndex = 12;
-            this.btnBlade4.UseVisualStyleBackColor = false;
-            // 
-            // btnBlade3
-            // 
-            this.btnBlade3.BackColor = System.Drawing.Color.Transparent;
-            this.btnBlade3.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
-            this.btnBlade3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBlade3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnBlade3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBlade3.Location = new System.Drawing.Point(307, 308);
-            this.btnBlade3.Name = "btnBlade3";
-            this.btnBlade3.Size = new System.Drawing.Size(90, 83);
-            this.btnBlade3.TabIndex = 13;
-            this.btnBlade3.UseVisualStyleBackColor = false;
-            // 
-            // btnBlade2
-            // 
-            this.btnBlade2.BackColor = System.Drawing.Color.Transparent;
-            this.btnBlade2.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
-            this.btnBlade2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBlade2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnBlade2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBlade2.Location = new System.Drawing.Point(307, 219);
-            this.btnBlade2.Name = "btnBlade2";
-            this.btnBlade2.Size = new System.Drawing.Size(90, 83);
-            this.btnBlade2.TabIndex = 14;
-            this.btnBlade2.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -176,29 +60,29 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "Win Blade Battle";
             // 
-            // label2
+            // lblTurn
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Permanent Marker", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(233, 411);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 40);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Turn :";
+            this.lblTurn.AutoSize = true;
+            this.lblTurn.BackColor = System.Drawing.Color.Transparent;
+            this.lblTurn.Font = new System.Drawing.Font("Permanent Marker", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTurn.ForeColor = System.Drawing.Color.Yellow;
+            this.lblTurn.Location = new System.Drawing.Point(233, 411);
+            this.lblTurn.Name = "lblTurn";
+            this.lblTurn.Size = new System.Drawing.Size(98, 40);
+            this.lblTurn.TabIndex = 16;
+            this.lblTurn.Text = "Turn :";
             // 
-            // label3
+            // lblWinner
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Permanent Marker", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Yellow;
-            this.label3.Location = new System.Drawing.Point(233, 460);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 40);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Winner :";
+            this.lblWinner.AutoSize = true;
+            this.lblWinner.BackColor = System.Drawing.Color.Transparent;
+            this.lblWinner.Font = new System.Drawing.Font("Permanent Marker", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWinner.ForeColor = System.Drawing.Color.Yellow;
+            this.lblWinner.Location = new System.Drawing.Point(233, 460);
+            this.lblWinner.Name = "lblWinner";
+            this.lblWinner.Size = new System.Drawing.Size(133, 40);
+            this.lblWinner.TabIndex = 17;
+            this.lblWinner.Text = "Winner :";
             // 
             // btnStart
             // 
@@ -216,25 +100,25 @@
             this.btnStart.Text = "Restart";
             this.btnStart.UseVisualStyleBackColor = false;
             // 
-            // label4
+            // lblTurnValue
             // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Permanent Marker", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Lime;
-            this.label4.Location = new System.Drawing.Point(368, 411);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(230, 40);
-            this.label4.TabIndex = 19;
+            this.lblTurnValue.BackColor = System.Drawing.Color.Transparent;
+            this.lblTurnValue.Font = new System.Drawing.Font("Permanent Marker", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTurnValue.ForeColor = System.Drawing.Color.Lime;
+            this.lblTurnValue.Location = new System.Drawing.Point(368, 411);
+            this.lblTurnValue.Name = "lblTurnValue";
+            this.lblTurnValue.Size = new System.Drawing.Size(230, 40);
+            this.lblTurnValue.TabIndex = 19;
             // 
-            // label5
+            // lblWinnerValue
             // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Permanent Marker", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Lime;
-            this.label5.Location = new System.Drawing.Point(368, 460);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(230, 40);
-            this.label5.TabIndex = 20;
+            this.lblWinnerValue.BackColor = System.Drawing.Color.Transparent;
+            this.lblWinnerValue.Font = new System.Drawing.Font("Permanent Marker", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWinnerValue.ForeColor = System.Drawing.Color.Lime;
+            this.lblWinnerValue.Location = new System.Drawing.Point(368, 460);
+            this.lblWinnerValue.Name = "lblWinnerValue";
+            this.lblWinnerValue.Size = new System.Drawing.Size(230, 40);
+            this.lblWinnerValue.TabIndex = 20;
             // 
             // btnBack
             // 
@@ -253,6 +137,141 @@
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // pnlBladeBoxes
+            // 
+            this.pnlBladeBoxes.BackColor = System.Drawing.Color.Transparent;
+            this.pnlBladeBoxes.Controls.Add(this.btnBlade2);
+            this.pnlBladeBoxes.Controls.Add(this.btnBlade3);
+            this.pnlBladeBoxes.Controls.Add(this.btnBlade4);
+            this.pnlBladeBoxes.Controls.Add(this.btnBlade7);
+            this.pnlBladeBoxes.Controls.Add(this.btnBlade9);
+            this.pnlBladeBoxes.Controls.Add(this.btnBlade6);
+            this.pnlBladeBoxes.Controls.Add(this.btnBlade8);
+            this.pnlBladeBoxes.Controls.Add(this.btnBlade5);
+            this.pnlBladeBoxes.Controls.Add(this.btnBlade1);
+            this.pnlBladeBoxes.Location = new System.Drawing.Point(272, 113);
+            this.pnlBladeBoxes.Name = "pnlBladeBoxes";
+            this.pnlBladeBoxes.Size = new System.Drawing.Size(337, 295);
+            this.pnlBladeBoxes.TabIndex = 22;
+            // 
+            // btnBlade2
+            // 
+            this.btnBlade2.BackColor = System.Drawing.Color.Transparent;
+            this.btnBlade2.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
+            this.btnBlade2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBlade2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnBlade2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBlade2.Location = new System.Drawing.Point(27, 106);
+            this.btnBlade2.Name = "btnBlade2";
+            this.btnBlade2.Size = new System.Drawing.Size(90, 83);
+            this.btnBlade2.TabIndex = 23;
+            this.btnBlade2.UseVisualStyleBackColor = false;
+            // 
+            // btnBlade3
+            // 
+            this.btnBlade3.BackColor = System.Drawing.Color.Transparent;
+            this.btnBlade3.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
+            this.btnBlade3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBlade3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnBlade3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBlade3.Location = new System.Drawing.Point(27, 195);
+            this.btnBlade3.Name = "btnBlade3";
+            this.btnBlade3.Size = new System.Drawing.Size(90, 83);
+            this.btnBlade3.TabIndex = 22;
+            this.btnBlade3.UseVisualStyleBackColor = false;
+            // 
+            // btnBlade4
+            // 
+            this.btnBlade4.BackColor = System.Drawing.Color.Transparent;
+            this.btnBlade4.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
+            this.btnBlade4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBlade4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnBlade4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBlade4.Location = new System.Drawing.Point(123, 17);
+            this.btnBlade4.Name = "btnBlade4";
+            this.btnBlade4.Size = new System.Drawing.Size(90, 83);
+            this.btnBlade4.TabIndex = 21;
+            this.btnBlade4.UseVisualStyleBackColor = false;
+            // 
+            // btnBlade7
+            // 
+            this.btnBlade7.BackColor = System.Drawing.Color.Transparent;
+            this.btnBlade7.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
+            this.btnBlade7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBlade7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnBlade7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBlade7.Location = new System.Drawing.Point(219, 17);
+            this.btnBlade7.Name = "btnBlade7";
+            this.btnBlade7.Size = new System.Drawing.Size(90, 83);
+            this.btnBlade7.TabIndex = 20;
+            this.btnBlade7.UseVisualStyleBackColor = false;
+            // 
+            // btnBlade9
+            // 
+            this.btnBlade9.BackColor = System.Drawing.Color.Transparent;
+            this.btnBlade9.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
+            this.btnBlade9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBlade9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnBlade9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBlade9.Location = new System.Drawing.Point(219, 195);
+            this.btnBlade9.Name = "btnBlade9";
+            this.btnBlade9.Size = new System.Drawing.Size(90, 83);
+            this.btnBlade9.TabIndex = 19;
+            this.btnBlade9.UseVisualStyleBackColor = false;
+            // 
+            // btnBlade6
+            // 
+            this.btnBlade6.BackColor = System.Drawing.Color.Transparent;
+            this.btnBlade6.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
+            this.btnBlade6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBlade6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnBlade6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBlade6.Location = new System.Drawing.Point(123, 195);
+            this.btnBlade6.Name = "btnBlade6";
+            this.btnBlade6.Size = new System.Drawing.Size(90, 83);
+            this.btnBlade6.TabIndex = 18;
+            this.btnBlade6.UseVisualStyleBackColor = false;
+            // 
+            // btnBlade8
+            // 
+            this.btnBlade8.BackColor = System.Drawing.Color.Transparent;
+            this.btnBlade8.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
+            this.btnBlade8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBlade8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnBlade8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBlade8.Location = new System.Drawing.Point(219, 106);
+            this.btnBlade8.Name = "btnBlade8";
+            this.btnBlade8.Size = new System.Drawing.Size(90, 83);
+            this.btnBlade8.TabIndex = 17;
+            this.btnBlade8.UseVisualStyleBackColor = false;
+            // 
+            // btnBlade5
+            // 
+            this.btnBlade5.BackColor = System.Drawing.Color.Transparent;
+            this.btnBlade5.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
+            this.btnBlade5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBlade5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnBlade5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBlade5.Location = new System.Drawing.Point(123, 106);
+            this.btnBlade5.Name = "btnBlade5";
+            this.btnBlade5.Size = new System.Drawing.Size(90, 83);
+            this.btnBlade5.TabIndex = 16;
+            this.btnBlade5.UseVisualStyleBackColor = false;
+            // 
+            // btnBlade1
+            // 
+            this.btnBlade1.BackColor = System.Drawing.Color.Transparent;
+            this.btnBlade1.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources.Question_Mark_3D_Shape;
+            this.btnBlade1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBlade1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnBlade1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBlade1.Location = new System.Drawing.Point(27, 17);
+            this.btnBlade1.Name = "btnBlade1";
+            this.btnBlade1.Size = new System.Drawing.Size(90, 83);
+            this.btnBlade1.TabIndex = 15;
+            this.btnBlade1.UseVisualStyleBackColor = false;
+            this.btnBlade1.Click += new System.EventHandler(this.btnBlade1_Click);
+            // 
             // frmGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -260,47 +279,41 @@
             this.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources._2_Warriors;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(919, 597);
+            this.Controls.Add(this.pnlBladeBoxes);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblWinnerValue);
+            this.Controls.Add(this.lblTurnValue);
             this.Controls.Add(this.btnStart);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblWinner);
+            this.Controls.Add(this.lblTurn);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnBlade2);
-            this.Controls.Add(this.btnBlade3);
-            this.Controls.Add(this.btnBlade4);
-            this.Controls.Add(this.btnBlade7);
-            this.Controls.Add(this.btnBlade9);
-            this.Controls.Add(this.btnBlade6);
-            this.Controls.Add(this.btnBlade8);
-            this.Controls.Add(this.btnBlade5);
-            this.Controls.Add(this.btnBlade1);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "frmGame";
             this.Text = "Form4";
+            this.pnlBladeBoxes.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btnBlade1;
-        private System.Windows.Forms.Button btnBlade5;
-        private System.Windows.Forms.Button btnBlade8;
-        private System.Windows.Forms.Button btnBlade6;
-        private System.Windows.Forms.Button btnBlade9;
-        private System.Windows.Forms.Button btnBlade7;
-        private System.Windows.Forms.Button btnBlade4;
-        private System.Windows.Forms.Button btnBlade3;
-        private System.Windows.Forms.Button btnBlade2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblTurn;
+        private System.Windows.Forms.Label lblWinner;
         private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblTurnValue;
+        private System.Windows.Forms.Label lblWinnerValue;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Panel pnlBladeBoxes;
+        private System.Windows.Forms.Button btnBlade2;
+        private System.Windows.Forms.Button btnBlade3;
+        private System.Windows.Forms.Button btnBlade4;
+        private System.Windows.Forms.Button btnBlade7;
+        private System.Windows.Forms.Button btnBlade9;
+        private System.Windows.Forms.Button btnBlade6;
+        private System.Windows.Forms.Button btnBlade8;
+        private System.Windows.Forms.Button btnBlade5;
+        private System.Windows.Forms.Button btnBlade1;
     }
 }
