@@ -163,6 +163,7 @@ namespace Tic_Tac_Toe_Project
                 }
 
                 lblTurnValue.Text = "";
+                pnlBladeBoxes.Enabled = false;
             }
             else
             {
@@ -177,6 +178,7 @@ namespace Tic_Tac_Toe_Project
                 else
                 {
                     lblWinnerValue.Text = "Draw";
+                    pnlBladeBoxes.Enabled = false;
                 }
             }
         }
