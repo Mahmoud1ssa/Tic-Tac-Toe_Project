@@ -223,6 +223,7 @@ namespace Tic_Tac_Toe_Project
                 else
                 {
                     lblWinnerValue.Text = "Draw";
+                    lblTurnValue.Text = "";
                     MessageBox.Show("DRAW!", "Draw Message",
 MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
                     pnlBladeBoxes.Enabled = false;
