@@ -99,6 +99,7 @@
             this.btnRestart.TabIndex = 18;
             this.btnRestart.Text = "Restart";
             this.btnRestart.UseVisualStyleBackColor = false;
+            this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
             // 
             // lblTurnValue
             // 

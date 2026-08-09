@@ -143,15 +143,15 @@ namespace Tic_Tac_Toe_Project
             {
                 btnBlade.Tag = "1";
                 btnBlade.BackgroundImage = Resources.X_Blade_Shape;
+                btnBlade.Enabled = false;
             }
 
             else if (btnBlade.Tag == "0" && clsGameCurrentStat.CurrentBlade == 'O')
             {
                 btnBlade.Tag = "2";
                 btnBlade.BackgroundImage = Resources.O_Blade_Shape;
+                btnBlade.Enabled = false;
             }
-            else
-                return;
 
 
             if (IsThereAWinner())
@@ -177,6 +177,12 @@ namespace Tic_Tac_Toe_Project
 
                     else if (clsGameCurrentStat.CurrentBlade == 'O')
                         clsGameCurrentStat.CurrentBlade = 'X';
+
+                    if (clsGameCurrentStat.Player1 == clsGameCurrentStat.CurrentBlade)
+                        lblTurnValue.Text = "Player 1";
+
+                    else if (clsGameCurrentStat.Player2 == clsGameCurrentStat.CurrentBlade)
+                        lblTurnValue.Text = "Player 2";
                 }
                 else
                 {
@@ -234,6 +240,30 @@ namespace Tic_Tac_Toe_Project
         private void btnBlade9_Click(object sender, EventArgs e)
         {
             DealingWithBladeButtonClickAction(sender as Button);
+        }
+
+        private void ResetFormToRestartGame()
+        {
+            foreach(Button btnBlade in pnlBladeBoxes.Controls)
+            {
+                btnBlade.BackgroundImage = Resources.Question_Mark_3D_Shape;
+                btnBlade.BackColor = Color.Transparent;
+                btnBlade.Tag = "0";
+                btnBlade.Enabled = true;
+            }
+
+            pnlBladeBoxes.Enabled = true;
+
+            lblTurnValue.Text = "Player 1";
+            lblWinnerValue.Text = "";
+
+            clsGameCurrentStat.CurrentBlade = clsGameCurrentStat.Player1;
+            clsGameCurrentStat.WinBlade = null;
+        }
+
+        private void btnRestart_Click(object sender, EventArgs e)
+        {
+            ResetFormToRestartGame();
         }
     }
 }

@@ -8,10 +8,10 @@ namespace Tic_Tac_Toe_Project
 {
     internal static class clsGameCurrentStat
     {
-        public static Char Player1;
-        public static Char Player2;
+        public static Char? Player1 = null;
+        public static Char? Player2 = null;
 
-        public static Char CurrentBlade;
-        public static Char WinBlade;
+        public static Char? CurrentBlade = null;
+        public static Char? WinBlade = null;
     }
 }
