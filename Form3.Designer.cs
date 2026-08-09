@@ -127,7 +127,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "frmPlayersChoices";
             this.Text = "Win Blade";
-            this.Load += new System.EventHandler(this.frmPlayersChoices_Load);
+            this.Shown += new System.EventHandler(this.frmPlayersChoices_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

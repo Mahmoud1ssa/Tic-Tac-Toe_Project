@@ -21,7 +21,7 @@ namespace Tic_Tac_Toe_Project
             lblPlayer2ChoiceValue.Text = clsGameCurrentStat.Player2.ToString();
         }
 
-        private async void lblTimerFunction(int MilliSec, Label lbl)
+        private async Task lblTimerFunction(int MilliSec, Label lbl)
         {
             lbl.Text = Convert.ToString(MilliSec / 1000);
 
@@ -31,10 +31,14 @@ namespace Tic_Tac_Toe_Project
                 await Task.Delay(1000);
             }
         }
-
-        private void frmPlayersChoices_Load(object sender, EventArgs e)
+        private async void frmPlayersChoices_Shown(object sender, EventArgs e)
         {
-            lblTimerFunction(5000,lblTimer);
+            await lblTimerFunction(5000, lblTimer);
+
+            frmGame frmGame = new frmGame();
+            this.Hide();
+            frmGame.ShowDialog();
+            this.Close();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
