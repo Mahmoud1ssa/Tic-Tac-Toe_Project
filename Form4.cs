@@ -139,16 +139,19 @@ namespace Tic_Tac_Toe_Project
 
         private void DealingWithBladeButtonClickAction(Button btnBlade)
         {
-            if (btnBlade.Tag == "0")
+            if (btnBlade.Tag == "0" && clsGameCurrentStat.CurrentBlade == 'X')
+            {
                 btnBlade.Tag = "1";
+                btnBlade.BackgroundImage = Resources.X_Blade_Shape;
+            }
+
+            else if (btnBlade.Tag == "0" && clsGameCurrentStat.CurrentBlade == 'O')
+            {
+                btnBlade.Tag = "2";
+                btnBlade.BackgroundImage = Resources.O_Blade_Shape;
+            }
             else
                 return;
-
-            if (clsGameCurrentStat.CurrentBlade == 'X')
-                btnBlade.BackgroundImage = Resources.X_Blade_Shape;
-
-            else if (clsGameCurrentStat.CurrentBlade == 'O')
-                btnBlade.BackgroundImage = Resources.O_Blade_Shape;
 
 
             if (IsThereAWinner())
@@ -189,6 +192,46 @@ namespace Tic_Tac_Toe_Project
         }
 
         private void btnBlade1_Click(object sender, EventArgs e)
+        {
+            DealingWithBladeButtonClickAction(sender as Button);
+        }
+
+        private void btnBlade2_Click(object sender, EventArgs e)
+        {
+            DealingWithBladeButtonClickAction(sender as Button);
+        }
+
+        private void btnBlade3_Click(object sender, EventArgs e)
+        {
+            DealingWithBladeButtonClickAction(sender as Button);
+        }
+
+        private void btnBlade4_Click(object sender, EventArgs e)
+        {
+            DealingWithBladeButtonClickAction(sender as Button);
+        }
+
+        private void btnBlade5_Click(object sender, EventArgs e)
+        {
+            DealingWithBladeButtonClickAction(sender as Button);
+        }
+
+        private void btnBlade6_Click(object sender, EventArgs e)
+        {
+            DealingWithBladeButtonClickAction(sender as Button);
+        }
+
+        private void btnBlade7_Click(object sender, EventArgs e)
+        {
+            DealingWithBladeButtonClickAction(sender as Button);
+        }
+
+        private void btnBlade8_Click(object sender, EventArgs e)
+        {
+            DealingWithBladeButtonClickAction(sender as Button);
+        }
+
+        private void btnBlade9_Click(object sender, EventArgs e)
         {
             DealingWithBladeButtonClickAction(sender as Button);
         }
