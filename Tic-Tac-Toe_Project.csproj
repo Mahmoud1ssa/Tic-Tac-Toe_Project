@@ -115,7 +115,7 @@
     <None Include="Resources\2 Warriors_Side_By_Side.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\X Shape.png" />
+    <None Include="Resources\Question_Mark_3D_Shape.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

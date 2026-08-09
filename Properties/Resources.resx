@@ -118,13 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="2 Warriors_Side_By_Side" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2 Warriors_Side_By_Side.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Question_Mark_3D_Shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Question_Mark_3D_Shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="2_Warriors" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2_Warriors.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="X Shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\X Shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="2 Warriors_Side_By_Side" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2 Warriors_Side_By_Side.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="O_Blade_Shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\O_Blade_Shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="X_Blade_Shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\X_Blade_Shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

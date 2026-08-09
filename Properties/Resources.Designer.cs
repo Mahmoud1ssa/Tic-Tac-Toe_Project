@@ -83,9 +83,29 @@ namespace Tic_Tac_Toe_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap X_Shape {
+        internal static System.Drawing.Bitmap O_Blade_Shape {
             get {
-                object obj = ResourceManager.GetObject("X Shape", resourceCulture);
+                object obj = ResourceManager.GetObject("O_Blade_Shape", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Question_Mark_3D_Shape {
+            get {
+                object obj = ResourceManager.GetObject("Question_Mark_3D_Shape", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap X_Blade_Shape {
+            get {
+                object obj = ResourceManager.GetObject("X_Blade_Shape", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
