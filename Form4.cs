@@ -136,6 +136,7 @@ namespace Tic_Tac_Toe_Project
                 if (clsGameCurrentStat.WinBlade == clsGameCurrentStat.Player1)
                 {
                     lblWinnerValue.Text = "Player 1";
+                    lblTurnValue.Text = "";
                     MessageBox.Show("Player 1 WIN!", "Win Message", 
                         MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
 
@@ -143,11 +144,11 @@ namespace Tic_Tac_Toe_Project
                 else if (clsGameCurrentStat.WinBlade == clsGameCurrentStat.Player2)
                 {
                     lblWinnerValue.Text = "Player 2";
+                    lblTurnValue.Text = "";
                     MessageBox.Show("Player 2 WIN!", "Win Message",
     MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
                 }
 
-                lblTurnValue.Text = "";
                 pnlBladeBoxes.Enabled = false;
             }
             else
