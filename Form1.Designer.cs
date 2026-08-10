@@ -132,6 +132,7 @@
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.Name = "frmMainMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Win Blade";
             this.ResumeLayout(false);
             this.PerformLayout();

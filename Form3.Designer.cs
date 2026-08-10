@@ -126,6 +126,7 @@
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "frmPlayersChoices";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Win Blade";
             this.Shown += new System.EventHandler(this.frmPlayersChoices_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer1Choice)).EndInit();

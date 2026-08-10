@@ -317,6 +317,7 @@
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "frmGame";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Win Blade";
             this.pnlBladeBoxes.ResumeLayout(false);
             this.ResumeLayout(false);

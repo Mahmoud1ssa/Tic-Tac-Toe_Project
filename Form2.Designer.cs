@@ -116,6 +116,7 @@
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "frmChooseBlade";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Win Blade";
             this.ResumeLayout(false);
             this.PerformLayout();
