@@ -13,5 +13,6 @@ namespace Tic_Tac_Toe_Project
 
         public static Char? CurrentBlade = null;
         public static Char? WinBlade = null;
+        public static short HowManyChoicesChoosed;
     }
 }
