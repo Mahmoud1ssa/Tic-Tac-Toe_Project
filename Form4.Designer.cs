@@ -96,7 +96,7 @@
             this.btnRestart.Location = new System.Drawing.Point(375, 511);
             this.btnRestart.Name = "btnRestart";
             this.btnRestart.Size = new System.Drawing.Size(160, 53);
-            this.btnRestart.TabIndex = 18;
+            this.btnRestart.TabIndex = 10;
             this.btnRestart.Text = "Restart";
             this.btnRestart.UseVisualStyleBackColor = false;
             this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
@@ -133,7 +133,7 @@
             this.btnMainMenu.Location = new System.Drawing.Point(12, 12);
             this.btnMainMenu.Name = "btnMainMenu";
             this.btnMainMenu.Size = new System.Drawing.Size(124, 39);
-            this.btnMainMenu.TabIndex = 21;
+            this.btnMainMenu.TabIndex = 0;
             this.btnMainMenu.Text = "Main Menu";
             this.btnMainMenu.UseVisualStyleBackColor = false;
             this.btnMainMenu.Click += new System.EventHandler(this.btnMainMenu_Click_1);
@@ -166,7 +166,7 @@
             this.btnBlade2.Location = new System.Drawing.Point(27, 106);
             this.btnBlade2.Name = "btnBlade2";
             this.btnBlade2.Size = new System.Drawing.Size(90, 83);
-            this.btnBlade2.TabIndex = 23;
+            this.btnBlade2.TabIndex = 2;
             this.btnBlade2.Tag = "0";
             this.btnBlade2.UseVisualStyleBackColor = false;
             this.btnBlade2.Click += new System.EventHandler(this.btnBlade_Click);
@@ -182,7 +182,7 @@
             this.btnBlade3.Location = new System.Drawing.Point(27, 195);
             this.btnBlade3.Name = "btnBlade3";
             this.btnBlade3.Size = new System.Drawing.Size(90, 83);
-            this.btnBlade3.TabIndex = 22;
+            this.btnBlade3.TabIndex = 3;
             this.btnBlade3.Tag = "0";
             this.btnBlade3.UseVisualStyleBackColor = false;
             this.btnBlade3.Click += new System.EventHandler(this.btnBlade_Click);
@@ -198,7 +198,7 @@
             this.btnBlade4.Location = new System.Drawing.Point(123, 17);
             this.btnBlade4.Name = "btnBlade4";
             this.btnBlade4.Size = new System.Drawing.Size(90, 83);
-            this.btnBlade4.TabIndex = 21;
+            this.btnBlade4.TabIndex = 4;
             this.btnBlade4.Tag = "0";
             this.btnBlade4.UseVisualStyleBackColor = false;
             this.btnBlade4.Click += new System.EventHandler(this.btnBlade_Click);
@@ -214,7 +214,7 @@
             this.btnBlade7.Location = new System.Drawing.Point(219, 17);
             this.btnBlade7.Name = "btnBlade7";
             this.btnBlade7.Size = new System.Drawing.Size(90, 83);
-            this.btnBlade7.TabIndex = 20;
+            this.btnBlade7.TabIndex = 7;
             this.btnBlade7.Tag = "0";
             this.btnBlade7.UseVisualStyleBackColor = false;
             this.btnBlade7.Click += new System.EventHandler(this.btnBlade_Click);
@@ -230,7 +230,7 @@
             this.btnBlade9.Location = new System.Drawing.Point(219, 195);
             this.btnBlade9.Name = "btnBlade9";
             this.btnBlade9.Size = new System.Drawing.Size(90, 83);
-            this.btnBlade9.TabIndex = 19;
+            this.btnBlade9.TabIndex = 9;
             this.btnBlade9.Tag = "0";
             this.btnBlade9.UseVisualStyleBackColor = false;
             this.btnBlade9.Click += new System.EventHandler(this.btnBlade_Click);
@@ -246,7 +246,7 @@
             this.btnBlade6.Location = new System.Drawing.Point(123, 195);
             this.btnBlade6.Name = "btnBlade6";
             this.btnBlade6.Size = new System.Drawing.Size(90, 83);
-            this.btnBlade6.TabIndex = 18;
+            this.btnBlade6.TabIndex = 6;
             this.btnBlade6.Tag = "0";
             this.btnBlade6.UseVisualStyleBackColor = false;
             this.btnBlade6.Click += new System.EventHandler(this.btnBlade_Click);
@@ -262,7 +262,7 @@
             this.btnBlade8.Location = new System.Drawing.Point(219, 106);
             this.btnBlade8.Name = "btnBlade8";
             this.btnBlade8.Size = new System.Drawing.Size(90, 83);
-            this.btnBlade8.TabIndex = 17;
+            this.btnBlade8.TabIndex = 8;
             this.btnBlade8.Tag = "0";
             this.btnBlade8.UseVisualStyleBackColor = false;
             this.btnBlade8.Click += new System.EventHandler(this.btnBlade_Click);
@@ -278,7 +278,7 @@
             this.btnBlade5.Location = new System.Drawing.Point(123, 106);
             this.btnBlade5.Name = "btnBlade5";
             this.btnBlade5.Size = new System.Drawing.Size(90, 83);
-            this.btnBlade5.TabIndex = 16;
+            this.btnBlade5.TabIndex = 5;
             this.btnBlade5.Tag = "0";
             this.btnBlade5.UseVisualStyleBackColor = false;
             this.btnBlade5.Click += new System.EventHandler(this.btnBlade_Click);
@@ -294,7 +294,7 @@
             this.btnBlade1.Location = new System.Drawing.Point(27, 17);
             this.btnBlade1.Name = "btnBlade1";
             this.btnBlade1.Size = new System.Drawing.Size(90, 83);
-            this.btnBlade1.TabIndex = 15;
+            this.btnBlade1.TabIndex = 1;
             this.btnBlade1.Tag = "0";
             this.btnBlade1.UseVisualStyleBackColor = false;
             this.btnBlade1.Click += new System.EventHandler(this.btnBlade_Click);

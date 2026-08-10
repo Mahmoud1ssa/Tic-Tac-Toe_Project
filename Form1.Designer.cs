@@ -95,7 +95,7 @@
             this.btnExit.Location = new System.Drawing.Point(266, 271);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(170, 79);
-            this.btnExit.TabIndex = 5;
+            this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -112,7 +112,7 @@
             this.btnStart.Location = new System.Drawing.Point(467, 271);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(170, 79);
-            this.btnStart.TabIndex = 6;
+            this.btnStart.TabIndex = 0;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = false;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);

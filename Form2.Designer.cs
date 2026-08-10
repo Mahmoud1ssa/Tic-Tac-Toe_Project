@@ -61,7 +61,7 @@
             this.btnX.Location = new System.Drawing.Point(612, 448);
             this.btnX.Name = "btnX";
             this.btnX.Size = new System.Drawing.Size(146, 124);
-            this.btnX.TabIndex = 1;
+            this.btnX.TabIndex = 2;
             this.btnX.UseVisualStyleBackColor = false;
             this.btnX.Click += new System.EventHandler(this.btnX_Click);
             // 
@@ -80,7 +80,7 @@
             this.btnO.Location = new System.Drawing.Point(153, 448);
             this.btnO.Name = "btnO";
             this.btnO.Size = new System.Drawing.Size(146, 124);
-            this.btnO.TabIndex = 2;
+            this.btnO.TabIndex = 1;
             this.btnO.Tag = "1";
             this.btnO.UseVisualStyleBackColor = false;
             this.btnO.Click += new System.EventHandler(this.btnO_Click);
@@ -97,7 +97,7 @@
             this.btnBack.Location = new System.Drawing.Point(12, 12);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(87, 39);
-            this.btnBack.TabIndex = 3;
+            this.btnBack.TabIndex = 0;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
