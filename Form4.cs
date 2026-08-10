@@ -169,7 +169,7 @@ namespace Tic_Tac_Toe_Project
                         lblWinnerValue.Text = "Player 2";
                         lblTurnValue.Text = "";
                         MessageBox.Show("Player 2 WIN!", "Win Message",
-        MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
+                            MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
                     }
 
                     pnlBladeBoxes.Enabled = false;
@@ -184,7 +184,7 @@ namespace Tic_Tac_Toe_Project
                         lblWinnerValue.Text = "Draw";
                         lblTurnValue.Text = "";
                         MessageBox.Show("DRAW!", "Draw Message",
-    MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
+                            MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
                         pnlBladeBoxes.Enabled = false;
                     }
                 }
@@ -197,51 +197,10 @@ namespace Tic_Tac_Toe_Project
             this.Close();
         }
 
-        private void btnBlade1_Click(object sender, EventArgs e)
+        private void btnBlade_Click(object sender, EventArgs e)
         {
             DealingWithBladeButtonClickAction(sender as Button);
         }
-
-        private void btnBlade2_Click(object sender, EventArgs e)
-        {
-            DealingWithBladeButtonClickAction(sender as Button);
-        }
-
-        private void btnBlade3_Click(object sender, EventArgs e)
-        {
-            DealingWithBladeButtonClickAction(sender as Button);
-        }
-
-        private void btnBlade4_Click(object sender, EventArgs e)
-        {
-            DealingWithBladeButtonClickAction(sender as Button);
-        }
-
-        private void btnBlade5_Click(object sender, EventArgs e)
-        {
-            DealingWithBladeButtonClickAction(sender as Button);
-        }
-
-        private void btnBlade6_Click(object sender, EventArgs e)
-        {
-            DealingWithBladeButtonClickAction(sender as Button);
-        }
-
-        private void btnBlade7_Click(object sender, EventArgs e)
-        {
-            DealingWithBladeButtonClickAction(sender as Button);
-        }
-
-        private void btnBlade8_Click(object sender, EventArgs e)
-        {
-            DealingWithBladeButtonClickAction(sender as Button);
-        }
-
-        private void btnBlade9_Click(object sender, EventArgs e)
-        {
-            DealingWithBladeButtonClickAction(sender as Button);
-        }
-
 
         private void btnRestart_Click(object sender, EventArgs e)
         {
