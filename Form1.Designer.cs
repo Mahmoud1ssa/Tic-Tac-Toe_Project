@@ -34,6 +34,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lnkLinkedInValue = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -117,6 +119,32 @@
             this.btnStart.UseVisualStyleBackColor = false;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(12, 572);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(60, 16);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "LinkedIn:";
+            // 
+            // lnkLinkedInValue
+            // 
+            this.lnkLinkedInValue.AutoSize = true;
+            this.lnkLinkedInValue.BackColor = System.Drawing.Color.Transparent;
+            this.lnkLinkedInValue.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lnkLinkedInValue.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.lnkLinkedInValue.LinkColor = System.Drawing.Color.Blue;
+            this.lnkLinkedInValue.Location = new System.Drawing.Point(78, 572);
+            this.lnkLinkedInValue.Name = "lnkLinkedInValue";
+            this.lnkLinkedInValue.Size = new System.Drawing.Size(126, 16);
+            this.lnkLinkedInValue.TabIndex = 5;
+            this.lnkLinkedInValue.TabStop = true;
+            this.lnkLinkedInValue.Text = "Dev. Mahmoud Issa";
+            this.lnkLinkedInValue.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkLinkedInValue_LinkClicked);
+            // 
             // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -124,6 +152,8 @@
             this.BackgroundImage = global::Tic_Tac_Toe_Project.Properties.Resources._2_Warriors;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(919, 597);
+            this.Controls.Add(this.lnkLinkedInValue);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label4);
@@ -147,6 +177,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.LinkLabel lnkLinkedInValue;
     }
 }
 

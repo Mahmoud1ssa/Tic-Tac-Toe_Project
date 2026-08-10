@@ -39,5 +39,19 @@ namespace Tic_Tac_Toe_Project
 
             this.Show();
         }
+
+        private void lnkLinkedInValue_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            //This Command makes the site that you have visited marke with visited color "mauve color"...
+            //So if you see the webpage url in a the webBrowser again... you will see the url blue colored (visited before).
+            lnkLinkedInValue.LinkVisited = true;
+
+            //System is a namespace
+            //Diagnostics is a Sub namespace inside System
+            //Process is a class... and its job is to open a program inside the computer or a Web Explorer or any thing.
+            //Start is the function that does the job of opening a program or any thing.
+            //this command sais: open this WebPage using the default WebExplorer on the current Cumputer.
+            System.Diagnostics.Process.Start("https://www.linkedin.com/in/dev-mahmoud-issa-6a98b0390/");
+        }
     }
 }
